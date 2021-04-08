@@ -4,3 +4,10 @@ def remove_even(lst):
     if ele % 2 !=0:
         odd.append(ele)
     return odd
+
+'''
+Pythonic way - Use list comprehension
+'''
+
+def pythonic_remove_even(lst):
+    return [odd for ele in lst if ele % 2 != 0]
