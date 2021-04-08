@@ -9,6 +9,8 @@ def merge_lists(lst1, lst2):
             ind2+=1
         else:
             ind1+=1
+    if ind2 < len(lst2):  # Append whatever is left of list2 to list1
+        lst1.extend(lst2[ind2:])
     return lst1
 
 def easy_way_out(lst1,lst2)
